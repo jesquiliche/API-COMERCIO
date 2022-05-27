@@ -30,7 +30,7 @@ return new class extends Migration
             (((`productos` `p`
             LEFT JOIN `subcategorias` `s` ON ((`p`.`subcategoria_id` = `s`.`id`)))
             JOIN `categorias` `c` ON ((`c`.`id` = `s`.`categoria_id`)))
-            JOIN `marcas` `m` ON ((`m`.`id` = `p`.`marca_id`)));");
+            JOIN `marcas` `m` ON ((`m`.`id` = `p`.`marca_id`))) ORDER BY CATEGORIA,SUBCATEGORIA;");
     }
 
     /**
