@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api\V1;
 use App\Http\Controllers\Controller;
 use App\Models\Producto;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 
 class ProductoController extends Controller
@@ -22,7 +23,10 @@ class ProductoController extends Controller
     public function index()
     {
         //
-        return Producto::all();
+        $productos=DB::select('SELECT * FROM v_productos');
+       // dd($productos);
+       // return Producto::all();
+        return $productos;
     }
 
     /**

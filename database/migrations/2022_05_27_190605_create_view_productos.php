@@ -25,7 +25,7 @@ return new class extends Migration
             `s`.`nombre` AS `subcategoria`,
             `c`.`nombre` AS `categoria`,
             `m`.`nombre` AS `marca`,
-            `p`.`imagen` AS `imAGEN`
+            `p`.`imagen` AS `imagen`
         FROM
             (((`productos` `p`
             LEFT JOIN `subcategorias` `s` ON ((`p`.`subcategoria_id` = `s`.`id`)))

@@ -28,7 +28,7 @@ Route::apiResource('v1/ivas', App\Http\Controllers\Api\V1\IvaController::class);
 Route::apiResource('v1/productos', App\Http\Controllers\Api\V1\ProductoController::class);
 Route::apiResource('v1/ofertas', App\Http\Controllers\Api\V1\OfertaController::class);
 Route::apiResource('v1/poblaciones', App\Http\Controllers\Api\V1\PoblacionController::class);
-Route::apiResource('v1/productos', App\Http\Controllers\Api\V1\ProductosController::class);
+Route::apiResource('v1/productos', App\Http\Controllers\Api\V1\ProductoController::class);
 Route::apiResource('v1/proveedores', App\Http\Controllers\Api\V1\ProveedoresController::class);
 Route::apiResource('v1/provincias', App\Http\Controllers\Api\V1\ProvinciaController::class);
 Route::apiResource('v1/subcategorias', App\Http\Controllers\Api\V1\SubcategoriaController::class);
