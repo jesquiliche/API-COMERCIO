@@ -32,3 +32,4 @@ Route::apiResource('v1/productos', App\Http\Controllers\Api\V1\ProductoControlle
 Route::apiResource('v1/proveedores', App\Http\Controllers\Api\V1\ProveedorController::class);
 Route::apiResource('v1/provincias', App\Http\Controllers\Api\V1\ProvinciaController::class);
 Route::apiResource('v1/subcategorias', App\Http\Controllers\Api\V1\SubcategoriaController::class);
+Route::apiResource('v1/marcas', App\Http\Controllers\Api\V1\MarcaController::class);
