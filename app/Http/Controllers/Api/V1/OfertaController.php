@@ -7,6 +7,7 @@ use App\Models\Oferta;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use \DateTime;
+use Illuminate\Support\Facades\DB;
 
 class OfertaController extends Controller
 {
@@ -23,7 +24,11 @@ class OfertaController extends Controller
     public function index()
     {
         //
-        return Oferta::all();
+    
+        $ofertas=DB::select('SELECT * FROM v_ofertas');
+        // dd($productos);
+        // return Producto::all();
+         return $ofertas;
     }
 
     /**
